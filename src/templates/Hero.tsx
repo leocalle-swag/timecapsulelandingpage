@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { AppText } from '@/utils/AppConfig';
+
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
@@ -12,12 +14,7 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
-        </li>
-        <li>
-          <Link href="/">Sign in</Link>
+          <Link href="https://archiviodiflusso.netlify.app/">Instagram</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -26,14 +23,14 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {AppText.slogan}
+            <span className="text-primary-500"> {AppText.site_name}</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description={AppText.subsblogan}
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
+          <Link href="#banner">
+            <Button xl>Unisciti alla lista d&#39;attesa</Button>
           </Link>
         }
       />

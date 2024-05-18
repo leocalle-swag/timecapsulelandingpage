@@ -1,27 +1,26 @@
+import { AppText } from '@/utils/AppConfig';
+
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
-  <Section
-    title="Your title here"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
-  >
+  <Section title="Il tuo spazio" description={AppText.values_1}>
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature.svg"
+      title={AppText.title_1}
+      description={AppText.values_1}
+      image="/assets/images/feature1.svg"
       imageAlt="First feature alt text"
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      title={AppText.title_2}
+      description={AppText.values_2}
       image="/assets/images/feature2.svg"
       imageAlt="Second feature alt text"
       reverse
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      title={AppText.title_3}
+      description={AppText.values_3}
       image="/assets/images/feature3.svg"
       imageAlt="Third feature alt text"
     />
