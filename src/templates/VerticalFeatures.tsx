@@ -4,7 +4,7 @@ import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
-  <Section title="Il tuo spazio" description={AppText.values_1}>
+  <Section title="Il tuo spazio" description={AppText.description_1}>
     <VerticalFeatureRow
       title={AppText.title_1}
       description={AppText.values_1}
